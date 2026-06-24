@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PediPay — No need of luck to perform.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#0a0a0a] text-white font-sans antialiased selection:bg-zinc-800 selection:text-white">
+
+    <!-- 1. HEADER / NAVBAR (Baseado na image_646046.png) -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logótipo -->
+            <a href="#" class="text-xl font-bold tracking-tight hover:opacity-80 transition-opacity">
+                pedi<span class="text-zinc-400">pay</span>
+            </a>
+            
+            <!-- Navegação Central -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-zinc-400">
+                <a href="#" class="hover:text-white transition-colors">Serviços</a>
+                <a href="#solucoes" class="hover:text-white transition-colors">Soluções</a>
+                <a href="#" class="hover:text-white transition-colors">Segurança</a>
+                <a href="#" class="hover:text-white transition-colors">Sobre nós</a>
+            </nav>
+
+            <!-- Botão de Ação -->
+            <div>
+                <a href="#download" class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-medium bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 rounded-full transition-all group">
+                    Descarregar App
+                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION (Baseado na image_646046.png) -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Fundo Abstrato Premium / Linhas de Design -->
+        <div class="absolute inset-0 z-0 opacity-30 pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] border border-zinc-800 rounded-full"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[1100px] border border-zinc-900 rounded-full"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-12">
+            <!-- Conteúdo à Esquerda com o novo Headline -->
+            <div class="lg:col-span-8 max-w-3xl">
+                <span class="text-xs uppercase tracking-[0.25em] text-zinc-500 font-semibold block mb-4">PediPay Ecosystem</span>
+                <h1 class="text-5xl md:text-7xl font-extralight tracking-tight text-white leading-[1.05] mb-8 uppercase">
+                    No need of <br class="hidden md:block">luck to <br><span class="font-normal text-zinc-400">perform.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-zinc-400 font-light leading-relaxed mb-6 max-w-xl">
+                    Estabilidade, velocidade e infraestrutura de elite. A carteira digital desenhada para quem exige precisão milimétrica em pagamentos e mobilidade urbana.
+                </p>
+            </div>
+
+            <!-- Badges de Lojas à Direita (Alinhamento Vertical da image_646046.png) -->
+            <div class="lg:col-span-4 flex flex-col items-start lg:items-end space-y-6 border-l lg:border-l-0 lg:border-r border-zinc-800 lg:pr-8 pl-6 lg:pl-0 py-4">
+                <span class="text-xs uppercase tracking-widest text-zinc-500 font-semibold">Disponível em breve</span>
+                <a href="#" class="opacity-60 hover:opacity-100 transition-opacity flex items-center space-x-3 group">
+                    <span class="text-right hidden lg:block">
+                        <span class="block text-xs text-zinc-500">Download para</span>
+                        <span class="text-sm font-medium text-zinc-300 group-hover:text-white">Apple iOS</span>
+                    </span>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 group-hover:text-white font-medium text-xs">iOS</div>
+                </a>
+                <a href="#" class="opacity-60 hover:opacity-100 transition-opacity flex items-center space-x-3 group">
+                    <span class="text-right hidden lg:block">
+                        <span class="block text-xs text-zinc-500">Download para</span>
+                        <span class="text-sm font-medium text-zinc-300 group-hover:text-white">Android OS</span>
+                    </span>
+                    <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 group-hover:text-white font-medium text-xs">AND</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SOLUÇÕES / CASOS DE USO (Baseado na image_64591d.png) -->
+    <section id="solucoes" class="py-32 border-t border-zinc-900 bg-[#070707]">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Título da Secção -->
+            <h2 class="text-4xl md:text-6xl font-light tracking-tight mb-12">
+                Building with the <span class="text-zinc-500">world's best</span>
+            </h2>
+
+            <!-- Filtros de Categorias (Réplica da image_64591d.png) -->
+            <div class="flex flex-wrap gap-3 mb-16 border-b border-zinc-900 pb-8">
+                <button class="px-5 py-2 text-xs font-medium rounded-full bg-zinc-800 text-white transition-colors cursor-pointer">Todas as soluções</button>
+                <button class="px-5 py-2 text-xs font-medium rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer">Carteira Digital</button>
+                <button class="px-5 py-2 text-xs font-medium rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer">Mobilidade Integrada</button>
+                <button class="px-5 py-2 text-xs font-medium rounded-full bg-zinc-900 text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors cursor-pointer">Segurança Avançada</button>
+            </div>
+
+            <!-- Lista de Recursos -->
+            <div class="space-y-16">
+                
+                <!-- Item 1: Pedi Wallet -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-zinc-900 pb-16">
+                    <div class="lg:col-span-3">
+                        <h3 class="text-2xl font-semibold tracking-tight">pedi wallet</h3>
+                    </div>
+                    <div class="lg:col-span-4 text-zinc-400 text-sm font-light leading-relaxed">
+                        Esquece as complicações bancárias tradicionais. Envia, recebe e guarda o teu saldo instantaneamente. Uma experiência financeira fluida e desenhada especificamente para acompanhar o teu ritmo diário.
+                    </div>
+                    <div class="lg:col-span-2 flex justify-center">
+                        <div class="w-24 h-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center text-xs text-zinc-600">Mockup App</div>
+                    </div>
+                    <div class="lg:col-span-1 flex flex-wrap gap-2 text-[11px] text-zinc-400">
+                        <span class="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded-md">Fintech</span>
+                        <span class="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded-md">Instant</span>
+                    </div>
+                    <div class="lg:col-span-2 flex lg:justify-end">
+                        <a href="#" class="inline-flex items-center px-4 py-2 text-xs border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors group">
+                            Saber Mais 
+                            <svg class="w-3 h-3 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2: Pedi Mobility -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-zinc-900 pb-16">
+                    <div class="lg:col-span-3">
+                        <h3 class="text-2xl font-semibold tracking-tight">pedi mobility</h3>
+                    </div>
+                    <div class="lg:col-span-4 text-zinc-400 text-sm font-light leading-relaxed">
+                        Paga as tuas viagens em transportes ou serviços de mobilidade urbana parceiros diretamente com a aplicação. Basta fazer scan do QR Code e a transação está concluída de forma segura.
+                    </div>
+                    <div class="lg:col-span-2 flex justify-center">
+                        <div class="w-24 h-16 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center text-xs text-zinc-600">Mockup Web</div>
+                    </div>
+                    <div class="lg:col-span-1 flex flex-wrap gap-2 text-[11px] text-zinc-400">
+                        <span class="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded-md">Mobilidade</span>
+                        <span class="px-2 py-1 bg-zinc-900 border border-zinc-800 rounded-md">QR Code</span>
+                    </div>
+                    <div class="lg:col-span-2 flex lg:justify-end">
+                        <a href="#" class="inline-flex items-center px-4 py-2 text-xs border border-zinc-800 rounded-full hover:bg-zinc-900 transition-colors group">
+                            Saber Mais 
+                            <svg class="w-3 h-3 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. COOKIE CONSENT BANNER -->
+    <div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-2xl bg-black/80 backdrop-blur-lg border border-zinc-800 p-4 rounded-xl z-50 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-zinc-400 text-center sm:text-left leading-relaxed">
+            Ao clicar em "Aceitar todos os cookies", aceita o armazenamento de cookies no seu dispositivo para melhorar a navegação no site e analisar o tráfego.
+        </p>
+        <div class="flex items-center space-x-3 shrink-0">
+            <button class="text-xs text-zinc-400 hover:text-white transition-colors px-3 py-1.5 cursor-pointer">Definições</button>
+            <button class="text-xs font-medium bg-white text-black px-4 py-1.5 rounded-lg hover:bg-zinc-200 transition-colors cursor-pointer">Aceitar todos</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
