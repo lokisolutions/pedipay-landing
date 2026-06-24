@@ -1,8 +1,1 @@
-{
-  "rewrites": [
-    {
-      "source": "/((?!assets|css|js|index.html|favicon.ico)[^/]+)",
-      "destination": "https://loki-eb4n.vercel.app/$1"
-    }
-  ]
-}
+{}
